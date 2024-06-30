@@ -1488,7 +1488,7 @@ DeconvExplorer <- function(deconvexp_bulk = NULL,
           },
           error = function(e) {
             showModal(errorModal(error_message = e$message))
-            waiter_hide()
+            waiter::waiter_hide()
           }
         )
       }
